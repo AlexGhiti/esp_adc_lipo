@@ -1,0 +1,611 @@
+EESchema Schematic File Version 2
+LIBS:esp_adc_lipo-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:esp_adc_lipo-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-01v090 U4
+U 1 1 5738C95A
+P 6650 2900
+F 0 "U4" H 6650 2800 50  0000 C CNN
+F 1 "ESP-01v090" H 6650 3000 50  0000 C CNN
+F 2 "ESP8266-01:ESP01" H 6650 2900 50  0001 C CNN
+F 3 "" H 6650 2900 50  0001 C CNN
+	1    6650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP3421A0T-E/CH-RESCUE-esp_adc_lipo U2
+U 1 1 5738C96E
+P 3500 2850
+F 0 "U2" H 2950 3200 40  0000 C CNN
+F 1 "MCP3421A0T-E/CH" H 3200 3150 40  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 3350 2850 30  0000 C CIN
+F 3 "" H 3500 2850 60  0000 C CNN
+	1    3500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAT6219 U3
+U 1 1 5738CCB8
+P 4950 4600
+F 0 "U3" H 4700 4900 40  0000 C CNN
+F 1 "CAT6219" H 5100 4900 40  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 4950 4750 30  0000 C CIN
+F 3 "" H 4950 4600 60  0000 C CNN
+	1    4950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-esp_adc_lipo C3
+U 1 1 5739F80C
+P 4500 4250
+F 0 "C3" H 4500 4350 40  0000 L CNN
+F 1 "1uF" H 4506 4165 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4538 4100 30  0001 C CNN
+F 3 "" H 4500 4250 60  0000 C CNN
+	1    4500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-esp_adc_lipo C4
+U 1 1 5739F820
+P 5400 4250
+F 0 "C4" H 5400 4350 40  0000 L CNN
+F 1 "4,7uF" H 5406 4165 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5438 4100 30  0001 C CNN
+F 3 "" H 5400 4250 60  0000 C CNN
+	1    5400 4250
+	1    0    0    -1  
+$EndComp
+Text Notes 3800 4300 0    60   ~ 0
+2,4 to 4,2
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR01
+U 1 1 5739F9C5
+P 5400 4050
+F 0 "#PWR01" H 5400 4050 30  0001 C CNN
+F 1 "GND" H 5400 3980 30  0001 C CNN
+F 2 "" H 5400 4050 60  0000 C CNN
+F 3 "" H 5400 4050 60  0000 C CNN
+	1    5400 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR02
+U 1 1 5739F9D9
+P 4500 4050
+F 0 "#PWR02" H 4500 4050 30  0001 C CNN
+F 1 "GND" H 4500 3980 30  0001 C CNN
+F 2 "" H 4500 4050 60  0000 C CNN
+F 3 "" H 4500 4050 60  0000 C CNN
+	1    4500 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR03
+U 1 1 5739F9F5
+P 5400 5000
+F 0 "#PWR03" H 5400 5000 30  0001 C CNN
+F 1 "GND" H 5400 4930 30  0001 C CNN
+F 2 "" H 5400 5000 60  0000 C CNN
+F 3 "" H 5400 5000 60  0000 C CNN
+	1    5400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR04
+U 1 1 5739FA09
+P 4950 5000
+F 0 "#PWR04" H 4950 5000 30  0001 C CNN
+F 1 "GND" H 4950 4930 30  0001 C CNN
+F 2 "" H 4950 5000 60  0000 C CNN
+F 3 "" H 4950 5000 60  0000 C CNN
+	1    4950 5000
+	1    0    0    -1  
+$EndComp
+Text Notes 5150 4000 0    60   ~ 0
+better than 2.2uF
+$Comp
+L C-RESCUE-esp_adc_lipo C1
+U 1 1 573A1C9D
+P 3250 1950
+F 0 "C1" H 3250 2050 40  0000 L CNN
+F 1 "0,1uF" H 3256 1865 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3288 1800 30  0001 C CNN
+F 3 "" H 3250 1950 60  0000 C CNN
+	1    3250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C-RESCUE-esp_adc_lipo C2
+U 1 1 573A1CB1
+P 3800 1950
+F 0 "C2" H 3800 2050 40  0000 L CNN
+F 1 "10uF" H 3806 1865 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3838 1800 30  0001 C CNN
+F 3 "" H 3800 1950 60  0000 C CNN
+	1    3800 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-esp_adc_lipo R1
+U 1 1 573A1D51
+P 4250 2500
+F 0 "R1" V 4330 2500 40  0000 C CNN
+F 1 "10k" V 4257 2501 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4180 2500 30  0001 C CNN
+F 3 "" H 4250 2500 30  0000 C CNN
+	1    4250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R-RESCUE-esp_adc_lipo R2
+U 1 1 573A1D65
+P 4600 2500
+F 0 "R2" V 4680 2500 40  0000 C CNN
+F 1 "10k" V 4607 2501 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4530 2500 30  0001 C CNN
+F 3 "" H 4600 2500 30  0000 C CNN
+	1    4600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR05
+U 1 1 573A1D1A
+P 3250 1750
+F 0 "#PWR05" H 3250 1750 30  0001 C CNN
+F 1 "GND" H 3250 1680 30  0001 C CNN
+F 2 "" H 3250 1750 60  0000 C CNN
+F 3 "" H 3250 1750 60  0000 C CNN
+	1    3250 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR06
+U 1 1 573A1D3D
+P 3800 1750
+F 0 "#PWR06" H 3800 1750 30  0001 C CNN
+F 1 "GND" H 3800 1680 30  0001 C CNN
+F 2 "" H 3800 1750 60  0000 C CNN
+F 3 "" H 3800 1750 60  0000 C CNN
+	1    3800 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR07
+U 1 1 573A1FDF
+P 3600 3250
+F 0 "#PWR07" H 3600 3250 30  0001 C CNN
+F 1 "GND" H 3600 3180 30  0001 C CNN
+F 2 "" H 3600 3250 60  0000 C CNN
+F 3 "" H 3600 3250 60  0000 C CNN
+	1    3600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR08
+U 1 1 573A219D
+P 7600 2750
+F 0 "#PWR08" H 7600 2750 30  0001 C CNN
+F 1 "GND" H 7600 2680 30  0001 C CNN
+F 2 "" H 7600 2750 60  0000 C CNN
+F 3 "" H 7600 2750 60  0000 C CNN
+	1    7600 2750
+	0    -1   -1   0   
+$EndComp
+Text Label 5750 4450 2    60   ~ 0
+ldo_output
+Text Label 5700 3050 2    60   ~ 0
+VIN33
+Text Label 5700 2850 2    60   ~ 0
+VIN33
+Text Label 3000 2150 0    60   ~ 0
+VIN33
+$Comp
+L C-RESCUE-esp_adc_lipo C5
+U 1 1 5739F988
+P 5400 4800
+F 0 "C5" H 5400 4900 40  0000 L CNN
+F 1 "10nF" H 5406 4715 40  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5438 4650 30  0001 C CNN
+F 3 "" H 5400 4800 60  0000 C CNN
+	1    5400 4800
+	1    0    0    -1  
+$EndComp
+Text Label 4250 2750 2    60   ~ 0
+scl
+Text Label 4600 2750 2    60   ~ 0
+sda
+Text Label 7600 2850 0    60   ~ 0
+scl
+Text Label 7600 2950 0    60   ~ 0
+sda
+Text Notes 5600 4750 0    60   ~ 0
+cap not necessary\n
+$Comp
+L CONN_2 P2
+U 1 1 57472654
+P 2800 4000
+F 0 "P2" V 2750 4000 40  0000 C CNN
+F 1 "CONN_2" V 2850 4000 40  0000 C CNN
+F 2 "Connect:PINHEAD1-2" H 2800 4000 60  0001 C CNN
+F 3 "" H 2800 4000 60  0000 C CNN
+	1    2800 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR09
+U 1 1 5747266B
+P 3150 3900
+F 0 "#PWR09" H 3150 3900 30  0001 C CNN
+F 1 "GND" H 3150 3830 30  0001 C CNN
+F 2 "" H 3150 3900 60  0000 C CNN
+F 3 "" H 3150 3900 60  0000 C CNN
+	1    3150 3900
+	0    -1   -1   0   
+$EndComp
+Text Notes 2500 4350 0    60   ~ 0
+GND PWR from Lipo
+$Comp
+L CONN_3 P1
+U 1 1 574727C8
+P 1550 2700
+F 0 "P1" V 1500 2700 40  0000 C CNN
+F 1 "CONN_3" V 1600 2700 40  0000 C CNN
+F 2 "Connect:PINHEAD1-3" H 1550 2700 60  0001 C CNN
+F 3 "" H 1550 2700 60  0000 C CNN
+	1    1550 2700
+	-1   0    0    1   
+$EndComp
+Text Label 1900 2600 0    60   ~ 0
+INPUT+
+Text Label 3000 2700 2    60   ~ 0
+INPUT+
+Text Notes 750  3350 0    60   ~ 0
+inputs from external adc component,\njumper between input - and gnd, so that\ni can keep both inputs if needed. If \nonly one input, input- must be grounded.
+Text Label 5700 2750 2    60   ~ 0
+RX
+Text Label 7600 3050 0    60   ~ 0
+TX
+Text Label 6300 1950 0    60   ~ 0
+RX
+Text Label 6300 2150 0    60   ~ 0
+TX
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR010
+U 1 1 57473032
+P 7150 2100
+F 0 "#PWR010" H 7150 2100 30  0001 C CNN
+F 1 "GND" H 7150 2030 30  0001 C CNN
+F 2 "" H 7150 2100 60  0000 C CNN
+F 3 "" H 7150 2100 60  0000 C CNN
+	1    7150 2100
+	0    1    1    0   
+$EndComp
+Text Label 3000 3000 2    60   ~ 0
+INPUT-
+Text Label 1900 2700 0    60   ~ 0
+INPUT-
+Text Label 4450 2050 0    60   ~ 0
+VIN33
+Text Notes 7450 2500 0    60   ~ 0
+Jumper to connect gpio0 to gnd to reset flash.
+$Comp
+L VCC #PWR011
+U 1 1 57473DEF
+P 3150 4100
+F 0 "#PWR011" H 3150 4200 30  0001 C CNN
+F 1 "VCC" H 3150 4200 30  0000 C CNN
+F 2 "" H 3150 4100 60  0000 C CNN
+F 3 "" H 3150 4100 60  0000 C CNN
+	1    3150 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR012
+U 1 1 57473E03
+P 4100 4450
+F 0 "#PWR012" H 4100 4550 30  0001 C CNN
+F 1 "VCC" H 4100 4550 30  0000 C CNN
+F 2 "" H 4100 4450 60  0000 C CNN
+F 3 "" H 4100 4450 60  0000 C CNN
+	1    4100 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR013
+U 1 1 57473E17
+P 1950 4400
+F 0 "#PWR013" H 1950 4500 30  0001 C CNN
+F 1 "VCC" H 1950 4500 30  0000 C CNN
+F 2 "" H 1950 4400 60  0000 C CNN
+F 3 "" H 1950 4400 60  0000 C CNN
+	1    1950 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR014
+U 1 1 57473E2B
+P 1700 4400
+F 0 "#PWR014" H 1700 4400 30  0001 C CNN
+F 1 "GND" H 1700 4330 30  0001 C CNN
+F 2 "" H 1700 4400 60  0000 C CNN
+F 3 "" H 1700 4400 60  0000 C CNN
+	1    1700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG015
+U 1 1 57473E3F
+P 1700 4400
+F 0 "#FLG015" H 1700 4495 30  0001 C CNN
+F 1 "PWR_FLAG" H 1700 4580 30  0000 C CNN
+F 2 "" H 1700 4400 60  0000 C CNN
+F 3 "" H 1700 4400 60  0000 C CNN
+	1    1700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 57473E53
+P 1950 4400
+F 0 "#FLG016" H 1950 4495 30  0001 C CNN
+F 1 "PWR_FLAG" H 1950 4580 30  0000 C CNN
+F 2 "" H 1950 4400 60  0000 C CNN
+F 3 "" H 1950 4400 60  0000 C CNN
+	1    1950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 P3
+U 1 1 574B347B
+P 8900 2850
+F 0 "P3" V 8850 2850 40  0000 C CNN
+F 1 "CONN_3" V 8950 2850 40  0000 C CNN
+F 2 "Connect:PINHEAD1-3" H 8900 2850 60  0001 C CNN
+F 3 "" H 8900 2850 60  0000 C CNN
+	1    8900 2850
+	1    0    0    -1  
+$EndComp
+Text Label 8550 2750 0    60   ~ 0
+scl
+Text Label 8550 2850 0    60   ~ 0
+sda
+Text Notes 8200 3250 0    60   ~ 0
+To use gpios if no adc
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR017
+U 1 1 574B354E
+P 1900 2800
+F 0 "#PWR017" H 1900 2800 30  0001 C CNN
+F 1 "GND" H 1900 2730 30  0001 C CNN
+F 2 "" H 1900 2800 60  0000 C CNN
+F 3 "" H 1900 2800 60  0000 C CNN
+	1    1900 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND-RESCUE-esp_adc_lipo #PWR018
+U 1 1 574B3620
+P 8550 2950
+F 0 "#PWR018" H 8550 2950 30  0001 C CNN
+F 1 "GND" H 8550 2880 30  0001 C CNN
+F 2 "" H 8550 2950 60  0000 C CNN
+F 3 "" H 8550 2950 60  0000 C CNN
+	1    8550 2950
+	0    1    1    0   
+$EndComp
+Text Label 7150 1900 0    60   ~ 0
+VIN33
+Text Notes 6200 1750 0    60   ~ 0
+VIN for external adc component\nGND for uart and external adc component.
+$Comp
+L CONN_2 P4
+U 1 1 574B5592
+P 6650 2050
+F 0 "P4" V 6600 2050 40  0000 C CNN
+F 1 "CONN_2" V 6700 2050 40  0000 C CNN
+F 2 "Connect:PINHEAD1-2" H 6650 2050 60  0001 C CNN
+F 3 "" H 6650 2050 60  0000 C CNN
+	1    6650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P5
+U 1 1 574B55AA
+P 7500 2000
+F 0 "P5" V 7450 2000 40  0000 C CNN
+F 1 "CONN_2" V 7550 2000 40  0000 C CNN
+F 2 "Connect:PINHEAD1-2" H 7500 2000 60  0001 C CNN
+F 3 "" H 7500 2000 60  0000 C CNN
+	1    7500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC3525 U1
+U 1 1 57FE7171
+P 8650 4450
+F 0 "U1" H 8650 4750 50  0000 C CNN
+F 1 "LTC3525" H 8650 4150 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SC-70-6_Handsoldering" H 8650 4450 50  0001 C CNN
+F 3 "" H 8650 4450 50  0000 C CNN
+	1    8650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR_SMALL 10uH1
+U 1 1 57FE738F
+P 8650 3750
+F 0 "10uH1" H 8650 3850 50  0000 C CNN
+F 1 "INDUCTOR_SMALL" H 8650 3700 50  0000 C CNN
+F 2 "Inductors_NEOSID:Neosid_Inductor_SM-NE30_SMD1210" H 8650 3750 50  0001 C CNN
+F 3 "" H 8650 3750 50  0000 C CNN
+	1    8650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 7350 8050 7350
+Wire Wire Line
+	8050 7350 8050 10750
+Wire Wire Line
+	8050 10750 7300 10750
+Wire Wire Line
+	4500 4450 4100 4450
+Connection ~ 4300 4450
+Wire Wire Line
+	4300 4450 4300 4600
+Wire Wire Line
+	4300 4600 4500 4600
+Wire Wire Line
+	4950 4900 4950 5000
+Wire Wire Line
+	5400 4450 5750 4450
+Wire Wire Line
+	3600 2450 3600 2150
+Wire Wire Line
+	3000 2150 3800 2150
+Connection ~ 3600 2150
+Wire Wire Line
+	4600 2250 4250 2250
+Connection ~ 4450 2250
+Wire Wire Line
+	4450 2050 4450 2250
+Connection ~ 3250 2150
+Wire Wire Line
+	4000 2750 4250 2750
+Wire Wire Line
+	4000 2850 4600 2850
+Wire Wire Line
+	4600 2850 4600 2750
+Wire Wire Line
+	8400 3750 8100 3750
+Wire Wire Line
+	8100 3750 8100 4300
+Wire Wire Line
+	8900 3750 9200 3750
+Wire Wire Line
+	9200 3750 9200 4300
+Wire Wire Line
+	8100 4300 7350 4300
+$Comp
+L C C6
+U 1 1 57FE8989
+P 7600 4600
+F 0 "C6" H 7625 4700 50  0000 L CNN
+F 1 "1uF" H 7625 4500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7638 4450 50  0001 C CNN
+F 3 "" H 7600 4600 50  0000 C CNN
+	1    7600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 57FE8ABC
+P 9650 4650
+F 0 "C7" H 9675 4750 50  0000 L CNN
+F 1 "10uF" H 9675 4550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9688 4500 50  0001 C CNN
+F 3 "" H 9650 4650 50  0000 C CNN
+	1    9650 4650
+	1    0    0    -1  
+$EndComp
+Text Label 7350 4300 0    60   ~ 0
+ldo_output
+$Comp
+L GND #PWR019
+U 1 1 57FE8CCD
+P 8100 4600
+F 0 "#PWR019" H 8100 4350 50  0001 C CNN
+F 1 "GND" H 8100 4450 50  0000 C CNN
+F 2 "" H 8100 4600 50  0000 C CNN
+F 3 "" H 8100 4600 50  0000 C CNN
+	1    8100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 57FE8D07
+P 9200 4600
+F 0 "#PWR020" H 9200 4350 50  0001 C CNN
+F 1 "GND" H 9200 4450 50  0000 C CNN
+F 2 "" H 9200 4600 50  0000 C CNN
+F 3 "" H 9200 4600 50  0000 C CNN
+	1    9200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 57FE8D41
+P 7600 4750
+F 0 "#PWR021" H 7600 4500 50  0001 C CNN
+F 1 "GND" H 7600 4600 50  0000 C CNN
+F 2 "" H 7600 4750 50  0000 C CNN
+F 3 "" H 7600 4750 50  0000 C CNN
+	1    7600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 57FE8D7B
+P 9650 4800
+F 0 "#PWR022" H 9650 4550 50  0001 C CNN
+F 1 "GND" H 9650 4650 50  0000 C CNN
+F 2 "" H 9650 4800 50  0000 C CNN
+F 3 "" H 9650 4800 50  0000 C CNN
+	1    9650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4450 7900 4450
+Wire Wire Line
+	7900 4450 7900 4300
+Connection ~ 7900 4300
+Wire Wire Line
+	9200 4450 9650 4450
+Wire Wire Line
+	9650 4450 9650 4500
+Text Label 9650 4450 0    60   ~ 0
+VIN33
+$EndSCHEMATC

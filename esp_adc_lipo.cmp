@@ -1,0 +1,155 @@
+Cmp-Mod V01 Genere par PcbNew le Mon 30 May 2016 07:04:53 PM CEST
+
+BeginCmp
+TimeStamp = 574752C8
+Path = /573A1CB1
+Reference = C2;
+ValeurCmp = 10uF;
+IdModule  = SMD_Packages:SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = 573DFFDE
+Path = /5739F820
+Reference = C4;
+ValeurCmp = 4,7uF;
+IdModule  = SMD_Packages:SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = 573DFFF6
+Path = /573A0047
+Reference = C6;
+ValeurCmp = 10uF;
+IdModule  = SMD_Packages:SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = 574DD60F
+Path = /573A01E6
+Reference = C7;
+ValeurCmp = 10uF;
+IdModule  = SMD_Packages:SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = 573E000A
+Path = /573A00EE
+Reference = L1;
+ValeurCmp = 4.7uF;
+IdModule  = Inductors_NEOSID:Neosid_Inductor_SM-NE30_SMD1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 57448FB7
+Path = /573A1D51
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = SMD_Packages:SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 57448FC2
+Path = /573A1D65
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = SMD_Packages:SM0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 57448FAC
+Path = /5738C96E
+Reference = U2;
+ValeurCmp = MCP3421A0T-E/CH;
+IdModule  = SMD_Packages:SOT23_6;
+EndCmp
+
+BeginCmp
+TimeStamp = 574DD7F1
+Path = /5738CCB8
+Reference = U3;
+ValeurCmp = CAT6219;
+IdModule  = SMD_Packages:SOT23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = 573E0046
+Path = /5738C95A
+Reference = U4;
+ValeurCmp = ESP-01v090;
+IdModule  = ESP01:ESP01;
+EndCmp
+
+BeginCmp
+TimeStamp = 573E005C
+Path = /573A002E
+Reference = U5;
+ValeurCmp = TPS61221;
+IdModule  = TPS61221:TPS61221;
+EndCmp
+
+BeginCmp
+TimeStamp = 57473BAB
+Path = /57472654
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = Connect:PINHEAD1-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 574B563E
+Path = /574B347B
+Reference = P3;
+ValeurCmp = CONN_3;
+IdModule  = Connect:PINHEAD1-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 574B5649
+Path = /574B5592
+Reference = P4;
+ValeurCmp = CONN_2;
+IdModule  = Connect:PINHEAD1-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 574B5654
+Path = /574B55AA
+Reference = P5;
+ValeurCmp = CONN_2;
+IdModule  = Connect:PINHEAD1-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 57473BA0
+Path = /574727C8
+Reference = P1;
+ValeurCmp = CONN_3;
+IdModule  = Connect:PINHEAD1-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 573DFFBA
+Path = /573A1C9D
+Reference = C1;
+ValeurCmp = 0,1uF;
+IdModule  = SMD_Packages:SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = 573DFFD2
+Path = /5739F80C
+Reference = C3;
+ValeurCmp = 1uF;
+IdModule  = SMD_Packages:SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = 573E199D
+Path = /5739F988
+Reference = C5;
+ValeurCmp = 10nF;
+IdModule  = SMD_Packages:SM0603_Capa;
+EndCmp
+
+EndListe
